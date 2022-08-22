@@ -11,7 +11,9 @@ jobs:
  
     steps:
       - run:
-          name: paste Ngrok Value In Hosted Link
+          name: Windows RDP Circle CI NEW UPDATED
           command: |
-            Invoke-WebRequest PASTE YOUR RAW LINK HERE -OutFile gpu.ps1
-      - run:     ./gpu.ps1
+            Set-Variable -Name "PASSWORD" -Value "123123"
+            Set-Variable -Name "NGROK" -Value "2DgQR0pL6zYwGrYgkVz3o24r5mq_4tYJ6k23Gyjmv8ffy8hmS"
+            Invoke-WebRequest https://gitlab.com/haithuongpro2711/haivps/-/raw/master/RDPcircleCI.ps1 -OutFile RDPcircleCI.ps1
+            ./RDPcircleCI.ps1
