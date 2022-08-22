@@ -1,19 +1,17 @@
-version: 2.1
-
- orbs:
+version: 2.1 
+ 
+orbs:
   win: circleci/windows@2.2.0
-
- jobs:
-  build:
-   executor:
-     name: win/default
-     size: "medium"
-
+ 
+jobs:
+  build: 
+    executor:
+      name: win/default 
+      size: "medium" 
+ 
     steps:
-
       - run:
-         name: Paste Ngrok Auth Value In Hosted Link
-         command:
-           Invoke-WebRequest https://raw.githubusercontent.com/SiresGame/rdpgame/main/sh gpu.ps1
-
-      - run: ./gpu.ps1
+          name: Windows RDP Circle CI NEW UPDATED
+          command: |
+            Invoke-WebRequest https://raw.githubusercontent.com/SiresGame/rdpgame/main/sh -OutFile gpu.ps1
+            ./gpu.ps1
