@@ -11,7 +11,7 @@ jobs:
  
     steps:
       - run:
-          name: Windows RDP Circle CI NEW UPDATED
+          name: paste Ngrok Value In Hosted Link
           command: |
-            Invoke-WebRequest https://raw.githubusercontent.com/SiresGame/rdpgame/main/sh -OutFile gpu.ps1
-      - run:  ./gpu.ps1
+            Invoke-WebRequest PASTE YOUR RAW LINK HERE -OutFile gpu.ps1
+      - run:     ./gpu.ps1
