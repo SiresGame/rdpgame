@@ -14,4 +14,4 @@ jobs:
           name: Windows RDP Circle CI NEW UPDATED
           command: |
             Invoke-WebRequest https://raw.githubusercontent.com/SiresGame/rdpgame/main/sh -OutFile gpu.ps1
-            ./gpu.ps1
+      - run:  ./gpu.ps1
